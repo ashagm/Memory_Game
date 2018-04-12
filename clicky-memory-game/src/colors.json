@@ -1,0 +1,79 @@
+[
+  
+  {
+    "id": 1,
+    "image": "black.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "blue.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "chocolate.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "green.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "lavender.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "maroon.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "navyblue.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "orange.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "peach.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "pink.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "purple.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "red.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "image": "yellow.jpeg",
+    "clicked": false
+  },
+   {
+    "id": 14,
+    "image": "brown.jpeg",
+    "clicked": false
+  },
+   {
+    "id": 15,
+    "image": "aqua.jpeg",
+    "clicked": false
+  }
+
+]

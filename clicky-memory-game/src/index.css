@@ -1,5 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Berkshire Swash', cursive;
+  color: #f0f3f3;
+  background: url('/assets/images/holi1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
