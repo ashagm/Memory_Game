@@ -2,3 +2,11 @@
 	height: 150px;
 	border-bottom: 5px solid #fff;
 }
+
+.status{
+	color: yellow;
+}
+
+.score{
+	font-size: 30px;
+}
