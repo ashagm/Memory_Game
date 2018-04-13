@@ -16,14 +16,14 @@ class App extends Component {
   };
 
   handleClick = propsData => {
-    console.log(propsData);
+    // console.log(propsData);
 
     if(this.state.clickedColors.includes(propsData.id)){
       //this has already been clicked"
       this.setState({score: 0});  
       this.setState({status: "Incorrect!, Begin again!"});
       this.state.clickedColors = [];
-      console.log(this.state.clickedColors);
+      // console.log(this.state.clickedColors);
       if(this.state.topScore < this.state.score){
         this.setState({topScore : this.state.score})
       }    
@@ -32,7 +32,7 @@ class App extends Component {
       this.setState({score : this.state.score + 1});  
       this.setState({status: "Correct!"});    
       this.state.clickedColors.push(propsData.id); 
-      console.log(this.state.clickedColors);
+      // console.log(this.state.clickedColors);
     }
     
   };
