@@ -10,7 +10,7 @@ const ClickyImage = (props) => {
         id={props.id} 
         // clicked={props.clicked.toString()}
         // clicked={props.clicked ? 1 : 0}
-        style={{backgroundImage: `url('/public/assets/images/${props.image}')`}}       
+        style={{backgroundImage: `url('/Memory_Game/assets/images/${props.image}')`}}       
         onClick={props.onClick.bind(this, props)} //why this bind??
         
         /> );
