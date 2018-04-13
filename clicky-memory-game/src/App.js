@@ -12,21 +12,54 @@ import './App.css';
 class App extends Component {
   state = {
     colors : colors,
-    score : 0
+    score : 0,
+    clickedColors :[]
   };
 
-  handleClick = event => {
-    console.log('clicked');
-    let value = event.target.clicked;
+  // handleClick = event => {
+  //   console.log(event.target.clicked);    
+  //   //color got clicked
+  //   event.target.clicked = 1;
+
+  //   // console.log(this.state.clickedColors.includes(event.target.id));
+    
+  //   if(event.target.clicked){
+
+  //   }else{
+  //     event.target.clicked = true;
+  //   }
+
+  //   if(!this.state.clickedColors.includes(event.target.id)){
+  //     this.state.clickedColors.push(event.target.id);
+  //     this.render(); //re render
+  //   }
+    
+  //   console.log(this.state.clickedColors)
+    
+  // };
+
+  handleClick = propsData => {
+    console.log(propsData);
+    if(propsData.clicked){
+      console.log("this has already been clicked")
+    }else{
+      console.log("clicked for the first time");
+      this.setState({score : this.state.score + 1}); 
+      this.setState({clickedColors: this.state.clickedColors.push(propsData.id)})
+
+      console.log(this.state.clickedColors);  
+    }
+    
   };
+
 
   render() {
     return (
        <div className="page-content">
-        <Navbar />
+        <Navbar  score={this.state.score}/>
         <Header />
         <Main>
-          {this.state.colors.map(
+          {this.state.colors.sort(() => Math.random() - 0.5).map(
             (clickyColor) => (
               <ClickyImage
                 id={clickyColor.id}
